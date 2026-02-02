@@ -1,0 +1,40 @@
+<!--- █████╗ ██╗     ███████╗██╗  ██╗ ██████╗ ███████╗████████╗██╗  ██╗███████╗███████╗ ██████╗ ██████╗ ███████╗███████╗████████╗
+     ██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔═══██╗██╔════╝╚══██╔══╝██║  ██║██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝╚══██╔══╝
+     ███████║██║     █████╗   ╚███╔╝ ██║   ██║█████╗     ██║   ███████║█████╗  █████╗  ██║   ██║██████╔╝█████╗  ███████╗   ██║   
+     ██╔══██║██║     ██╔══╝   ██╔██╗ ██║   ██║██╔══╝     ██║   ██╔══██║██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██╔══╝  ╚════██║   ██║   
+     ██║  ██║███████╗███████╗██╔╝ ██╗╚██████╔╝██║        ██║   ██║  ██║███████╗██║     ╚██████╔╝██║  ██║███████╗███████║   ██║   
+     ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝        ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝ --->
+                                                                                                                            
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Valentine</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Mainprompt">
+            <img class="image" src="images/catflower.jpg"></img>
+            <h1 class="hh" id="name">Ahoj Emka!</h1>
+             <p class="pp" id="question">Budeš moja valentinka?</p>
+            <div class="buttons">
+                <button id="no-button" onclick="showMessage('No')">Nie</button>
+                <button onclick="showMessage('Yes')" id="yesButton">Ano</button>
+            </div>
+            <div class="hidden-message" id="no-message">
+                <p>Dobrý pokus ale takto to nefunguje</p>
+            </div>
+            <div class="hidden-message" id="yes-message">
+                <p>YAY! Ďakujem</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
