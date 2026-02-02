@@ -27,19 +27,25 @@ function showMessage(response) {
     // Optional: You can also add a timeout to reset the position after a few seconds
   }
 
-  if (response === "Yes") {
-    // Remove name message and no button
-    document.getElementById("name").remove();
-    document.getElementById("no-button").remove();
+if (response === "Yes") {
+  // Remove name message and no button
+  document.getElementById("name").remove();
+  document.getElementById("no-button").remove();
 
-    // Update text content, show message, and change image source to "dance.gif"
-    const yesMessage = document.getElementById("question");
-    yesMessage.textContent = "LESGOOO Ďakujeeeem😘😘";
-    yesMessage.style.display = "block";
-    yesMessage.style.fontStyle = "normal";
-    document.getElementsByClassName("image")[0].src = "images/dance.gif";
+  // Update text content, show message, and change image source
+  const yesMessage = document.getElementById("question");
+  yesMessage.textContent = "LESGOOO Ďakujeeeem😘😘";
+  yesMessage.style.display = "block";
+  yesMessage.style.fontStyle = "normal";
+  document.getElementsByClassName("image")[0].src = "images/dance.gif";
 
-    // Remove yes button
-    document.getElementById("yesButton").remove();
-  }
+  // Play MP3 🎵
+  const audio = document.getElementById("yesAudio");
+  audio.currentTime = 0; // start from beginning
+  audio.play();
+
+  // Remove yes button
+  document.getElementById("yesButton").remove();
+}
+
 }
